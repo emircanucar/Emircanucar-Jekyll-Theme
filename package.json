@@ -1,0 +1,20 @@
+{
+  "name": "emircanucar-jekyll-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss assets/css/main.css -o _site/assets/css/main.css",
+    "watch": "postcss assets/css/main.css -o _site/assets/css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.10"
+  }
+}
