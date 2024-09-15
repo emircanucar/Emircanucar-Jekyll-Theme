@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "bundle exec jekyll build && npm run watch"
+  command = "bundle exec jekyll build && npm run build:css"
 
 [build.environment]
   RUBY_VERSION = "3.1.2" 
