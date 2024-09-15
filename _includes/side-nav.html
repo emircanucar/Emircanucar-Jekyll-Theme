@@ -1,0 +1,62 @@
+<!-- Side Bar Navigation -->
+
+<aside class="sidenav-wrapper">
+  <nav class="sidenav">
+    <button class="sidenav-close-btn icon-btn">
+      <i class="icon icon-close" id="sidenav-close-btn"></i>
+    </button>
+    <img
+      src="{{ '/assets/img/user/1.jpg' | asset_path }}"
+      class="sidenav-img"
+      alt="username"
+    />
+    <div class="sidenav-username">Emircan UÇAR</div>
+    <div class="sidenav-menu">
+      <a
+        href="/"
+        class="sidenav-menu-link {% if page.url == '/' %} current {% endif %}"
+        ><i class="icon icon-home"></i> Anasayfa</a
+      >
+      <a
+        href="/"
+        class="sidenav-menu-link {% if page.url == '/hakkimda' %} current {% endif %}"
+        ><i class="icon icon-user-detail"></i> Hakkımda</a
+      >
+      <a
+        href="/"
+        class="sidenav-menu-link {% if page.url == '/yazilarim' %} current {% endif %}"
+        ><i class="icon icon-pencil"></i> Yazılarım</a
+      >
+      <a
+        href="/"
+        class="sidenav-menu-link {% if page.url == '/galeri' %} current {% endif %}"
+        ><i class="icon icon-images"></i> Galeri</a
+      >
+      <a
+        href="/"
+        class="sidenav-menu-link {% if page.url == '/portfolyo' %} current {% endif %}"
+        ><i class="icon icon-folder-open"></i> Portfolyo</a
+      >
+      <a
+        href="/"
+        class="sidenav-menu-link {% if page.url == '/iletisim' %} current {% endif %}"
+        ><i class="icon icon-chat"></i> İletişim</a
+      >
+    </div>
+    <div class="sidenav-end">
+      <a
+        class="icon-btn"
+        target="_blank"
+        href="https://www.linkedin.com/in/emircanucar/"
+      >
+        <i class="icon icon-linkedin"></i>
+      </a>
+      <a class="icon-btn" target="_blank" href="https://github.com/emircanucar">
+        <i class="icon icon-github"></i>
+      </a>
+      <a class="icon-btn" target="_blank" href="https://codepen.io/emircanucar"
+        ><i class="icon icon-codepen"></i
+      ></a>
+    </div>
+  </nav>
+</aside>

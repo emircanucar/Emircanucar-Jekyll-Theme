@@ -1,3 +1,87 @@
+@import url(font.css);
+@import url(icon.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family:
+      "Quicksand",
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Ubuntu,
+      "Open Sans",
+      sans-serif;
+    font-weight: 500;
+  }
+}
+
+@layer components {
+  .icon-btn {
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-stone-200;
+  }
+
+  /* HEADER */
+
+  .header {
+    @apply sticky top-0 flex items-center justify-between bg-neutral-100 p-4 shadow-lg;
+  }
+
+  .header-start {
+    @apply flex items-center gap-4 text-lg;
+  }
+
+  .header-end {
+    @apply flex gap-1 p-1;
+  }
+
+  /* SIDE BAR NAVIGATION */
+
+  .sidenav-wrapper {
+    @apply invisible fixed z-10 h-dvh w-64 -translate-x-full transition-all duration-200 ease-in-out lg:visible lg:translate-x-0;
+  }
+
+  .show-sidenav {
+    @apply visible translate-x-0;
+  }
+
+  .sidenav {
+    @apply flex h-full w-full flex-col items-center gap-6 bg-neutral-100 pt-10 shadow-2xl lg:shadow-md;
+  }
+
+  .sidenav-close-btn {
+    @apply absolute right-3 top-3 flex lg:hidden;
+  }
+
+  .sidenav-img {
+    @apply flex h-28 w-28 flex-none items-center justify-center overflow-hidden rounded-full bg-slate-300 object-cover shadow-md;
+  }
+
+  .sidenav-username {
+    @apply text-xl font-bold;
+  }
+
+  /* Side Nav Menu */
+
+  .sidenav-menu {
+    @apply flex h-full w-full flex-col items-center gap-3;
+  }
+
+  .sidenav-menu .current {
+    @apply bg-gradient-to-r from-neutral-100 to-stone-200 font-bold;
+  }
+
+  /* Side Nav Menu Link */
+
+  .sidenav-menu-link {
+    @apply relative flex w-48 items-center gap-5 rounded-xl p-2 px-4 transition-all ease-in-out hover:bg-stone-200 hover:shadow-md;
+  }
+
+  /* Side Nav End */
+
+  .sidenav-end {
+    @apply flex gap-1 p-5;
+  }
+}

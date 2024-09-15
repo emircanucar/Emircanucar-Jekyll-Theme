@@ -1,0 +1,65 @@
+.icon {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+
+
+.icon.icon-moon {
+  background-image: url("../img/icon/moon.svg");
+}
+
+.icon.icon-github {
+  background-image: url("../img/icon/github.svg");
+}
+
+.icon.icon-linkedin {
+  background-image: url("../img/icon/linkedin.svg");
+}
+
+.icon.icon-home {
+  background-image: url("../img/icon/home.svg");
+}
+
+.icon.icon-paper-plane {
+  background-image: url("../img/icon/paper-plane.svg");
+}
+
+.icon.icon-images {
+  background-image: url("../img/icon/images.svg");
+}
+
+.icon.icon-chat {
+  background-image: url("../img/icon/chat.svg");
+}
+
+.icon.icon-folder-open {
+  background-image: url("../img/icon/folder-open.svg");
+}
+
+.icon.icon-pencil {
+  background-image: url("../img/icon/pencil.svg");
+}
+
+.icon.icon-user-detail {
+  background-image: url("../img/icon/user-detail.svg");
+}
+
+.icon.icon-codepen {
+  background-image: url("../img/icon/codepen.svg");
+}
+
+.icon.icon-close {
+  background-image: url("../img/icon/close.svg");
+  height: 36px;
+  width: 36px;
+}
+
+.icon.icon-menu {
+  background-image: url("../img/icon/menu.svg");
+  height: 36px;
+  width: 36px;
+}

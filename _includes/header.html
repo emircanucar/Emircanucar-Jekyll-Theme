@@ -1,24 +1,13 @@
-<header class="bg-slate-600">
-  <div class="container mx-auto">
-    <nav class="flex gap-2 text-white justify-between items-center px-2">
-      <div class="brand">Emircan Uçar</div>
-      <div class="menu flex">
-        <a
-          href="/"
-          class="hover:bg-slate-800 p-5 flex items-center justify-center"
-          >Home</a
-        >
-        <a
-          href="/about"
-          class="hover:bg-slate-800 p-5 flex items-center justify-center"
-          >About</a
-        >
-        <a
-          href="/blog"
-          class="hover:bg-slate-800 p-5 flex items-center justify-center"
-          >Blog</a
-        >
-      </div>
-    </nav>
+<header class="header">
+  <span class="header-start">
+    <button class="sidenav-show-btn block lg:hidden">
+      <i class="icon icon-menu"></i>
+    </button>
+    {% if page.url == '/' %} Hoşgeldiniz {% endif %}
+  </span>
+  <div class="header-end">
+    <button class="icon-btn">
+      <i class="icon icon-moon"></i>
+    </button>
   </div>
 </header>

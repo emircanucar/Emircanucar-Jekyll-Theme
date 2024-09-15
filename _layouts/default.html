@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,9 +6,22 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body class="bg-slate-200">
-    {% include header.html %}
-    <main>{{ content }}</main>
-    {% include footer.html %}
+
+  <body>
+    <!-- Side Nav -->
+    {% include side-nav.html %}
+
+    <div class="center-wrapper ps-0 lg:ps-64">
+      <!-- Header -->
+      {% include header.html %}
+
+      <!-- Content - Main -->
+      <main>{{ content }}</main>
+
+      <!-- Footer -->
+      {% include footer.html %}
+    </div>
+
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
