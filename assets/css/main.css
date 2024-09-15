@@ -48,7 +48,7 @@
   }
 
   .sidenav {
-    @apply flex h-full w-full flex-col items-center gap-6 bg-neutral-100 pt-10 shadow-2xl lg:shadow-md;
+    @apply flex h-full w-full flex-col items-center gap-6 overflow-y-auto bg-neutral-100 pt-10 shadow-2xl lg:shadow-md;
   }
 
   .sidenav-close-btn {
