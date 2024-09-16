@@ -11,12 +11,19 @@
     <!-- Side Nav -->
     {% include side-nav.html %}
 
-    <div class="center-wrapper ps-0 lg:ps-64">
+    <div class="ps-0 lg:ps-64">
       <!-- Header -->
       {% include header.html %}
 
       <!-- Content - Main -->
-      <main>{{ content }}</main>
+      <main>
+        <div class="container px-16 py-5">
+          <div class="grid grid-cols-12">
+            <div class="col-span-12 md:col-span-9">{{ content }}</div>
+            <div class="col-span-12 md:col-span-3"></div>
+          </div>
+        </div>
+      </main>
 
       <!-- Footer -->
       {% include footer.html %}

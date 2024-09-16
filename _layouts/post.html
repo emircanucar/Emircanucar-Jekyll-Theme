@@ -2,10 +2,15 @@
 layout: default
 ---
 
-<article class="max-w-xl mx-auto p-5">
-  <div class="post-header flex justify-between font-bold">
-    <h1>{{ page.title }}</h1>
-    <p class="text-justify">{{ page.date | date: "%B %d, %Y" }}</p>
-  </div>
-  <div class="mt-5">{{ content }}</div>
-</article>
+<div class="container p-5">
+  <article>
+    <div class="post-header flex flex-col gap-2">
+      <h1 class="text-2xl font-bold">{{ page.title }}</h1>
+      <div class="post-descpy-3">{{ page.description }}</div>
+      <p class="border-b text-justify font-light">
+        {{ page.date | date: "%B %d, %Y" }}
+      </p>
+    </div>
+    <div class="mt-5">{{ content }}</div>
+  </article>
+</div>

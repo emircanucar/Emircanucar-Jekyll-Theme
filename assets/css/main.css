@@ -26,7 +26,7 @@
   /* HEADER */
 
   .header {
-    @apply sticky top-0 flex items-center justify-between bg-neutral-100 p-4 shadow-lg;
+    @apply sticky top-0 flex items-center justify-between bg-neutral-100 p-4 shadow-md;
   }
 
   .header-start {
