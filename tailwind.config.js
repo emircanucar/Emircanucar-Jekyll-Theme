@@ -8,7 +8,11 @@ module.exports = {
     "!./.jekyll-cache/**", // 'jekyll-cache' adlı klasörü hariç tut
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        default: "url('/assets/img/default.svg')",
+      },
+    },
     container: {
       center: true,
     },

@@ -3,6 +3,7 @@ layout: post
 title: "Example Post"
 date: 2024-09-10 19:06:55 +0300
 categories: jekyll update
+description: "MMS (Multimedia Messaging Service), cep telefonları ve diğer mobil cihazlar üzerinden resim, video, ses dosyaları ve zengin içerikli metin mesajları gönderip almayı sağlayan bir iletişim protokolüdür."
 ---
 
 MMS (Multimedia Messaging Service), cep telefonları ve diğer mobil cihazlar üzerinden resim, video, ses dosyaları ve zengin içerikli metin mesajları gönderip almayı sağlayan bir iletişim protokolüdür. SMS (Short Message Service) sadece metin tabanlı mesajlar iletirken, MMS çoklu ortam dosyalarını taşıyabilir. MMS, 2G, 3G, 4G ve hatta Wi-Fi üzerinden çalışabilir.

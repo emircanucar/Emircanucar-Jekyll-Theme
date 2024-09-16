@@ -26,7 +26,7 @@
   /* HEADER */
 
   .header {
-    @apply sticky top-0 flex items-center justify-between bg-neutral-100 p-4 shadow-md;
+    @apply sticky top-0 z-20 flex items-center justify-between bg-neutral-100 p-4 shadow-md;
   }
 
   .header-start {
@@ -40,7 +40,7 @@
   /* SIDE BAR NAVIGATION */
 
   .sidenav-wrapper {
-    @apply invisible fixed z-10 h-dvh w-64 -translate-x-full transition-all duration-200 ease-in-out lg:visible lg:translate-x-0;
+    @apply invisible fixed z-30 h-dvh w-64 -translate-x-full transition-all duration-200 ease-in-out lg:visible lg:translate-x-0;
   }
 
   .show-sidenav {
@@ -83,5 +83,29 @@
 
   .sidenav-end {
     @apply flex gap-1 p-5;
+  }
+
+  /* POST CARD */
+  .post-card {
+    @apply grid h-[164px] grid-cols-12 overflow-hidden rounded-lg bg-neutral-100 shadow-md transition-all duration-300 ease-in-out hover:shadow-lg;
+  }
+  .post-card-start {
+    @apply p-5;
+  }
+  .post-card-end {
+    @apply bg-default relative h-full w-full overflow-hidden bg-cover bg-center;
+  }
+  .post-card-img {
+    @apply h-full w-full object-cover !object-center transition-all duration-300 ease-in-out;
+  }
+  .post-card-end::after {
+    content: "";
+    @apply absolute inset-0 z-10 h-full w-full bg-black bg-opacity-30 transition-all duration-300 ease-in-out;
+  }
+  .post-card:hover .post-card-end::after {
+    @apply bg-opacity-10;
+  }
+  .post-card:hover .post-card-img {
+    @apply scale-105;
   }
 }
