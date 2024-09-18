@@ -1,7 +1,7 @@
 <h2 class="mb-5 text-2xl">Posts</h2>
 
 <ul class="flex flex-col gap-5">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:3 %}
   <li>
     <a href="{{ post.url }}">
       <div class="post-card">

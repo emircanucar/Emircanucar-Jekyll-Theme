@@ -18,10 +18,12 @@
 
       <!-- Content - Main -->
       <main>
-        <div class="container px-16 py-5">
+        <div class="container py-10">
           <div class="grid grid-cols-12">
-            <div class="col-span-12 md:col-span-9">{{ content }}</div>
-            <div class="col-span-12 md:col-span-3"></div>
+            <div class="col-span-12 px-10 md:col-span-9">{{ content }}</div>
+            <div class="col-span-12 border-s-2 px-10 md:col-span-3">
+              {% include sm-post-list.html %}
+            </div>
           </div>
         </div>
       </main>

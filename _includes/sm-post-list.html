@@ -1,0 +1,10 @@
+<div class="sm-post-list flex flex-col gap-3">
+  <div class="text-lg font-bold">Yazılarım</div>
+  <ul class="flex flex-col gap-2">
+    {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}"> {{ post.title }} </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
