@@ -3,4 +3,25 @@ layout: default
 title: Anasayfa
 ---
 
+<div class="grid grid-cols-12 gap-5">
+  <div class="col-span-8">
+    <div class="blogger-name text-xl font-bold">Emircan UÇAR</div>
+    <div class="blogger-text mt-5 text-justify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur hic
+      commodi deserunt odio dignissimos vero laborum veritatis dolorem, facilis
+      voluptates impedit debitis qui. Alias perspiciatis porro voluptatibus quam
+      possimus? Quia?
+    </div>
+  </div>
+  <div class="col-span-4">
+    <div class="blogger-img overflow-hidden rounded-md">
+      <img
+        src="{{ '/assets/img/user/2.jpg' | asset_path }}"
+        class="w-full object-cover transition-all duration-300 hover:scale-105"
+        alt="username"
+      />
+    </div>
+  </div>
+</div>
+
 {% include post-card-list.html %}
