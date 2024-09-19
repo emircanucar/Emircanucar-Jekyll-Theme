@@ -3,7 +3,9 @@
   <ul class="flex flex-col gap-2">
     {% for post in site.posts limit:5 %}
     <li>
-      <a href="{{ post.url }}" class="line-clamp-1"> {{ post.title }} </a>
+      <a href="{{ post.url }}" class="line-clamp-1 hover:text-red-800">
+        {{ post.title }}
+      </a>
     </li>
     {% endfor %}
   </ul>

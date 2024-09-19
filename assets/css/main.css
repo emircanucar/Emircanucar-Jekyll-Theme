@@ -20,13 +20,13 @@
 
 @layer components {
   .icon-btn {
-    @apply flex h-10 w-10 items-center justify-center rounded-full bg-stone-200;
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-stone-100;
   }
 
   /* HEADER */
 
   .header {
-    @apply sticky top-0 z-20 flex items-center justify-between bg-neutral-100 p-4 shadow-md;
+    @apply sticky top-0 z-20 flex items-center justify-between bg-white p-4 shadow-md;
   }
 
   .header-start {
@@ -48,7 +48,7 @@
   }
 
   .sidenav {
-    @apply flex h-full w-full flex-col items-center gap-6 overflow-y-auto bg-neutral-100 pt-10 shadow-2xl lg:shadow-md;
+    @apply flex h-full w-full flex-col items-center gap-6 overflow-y-auto border pt-10 shadow-2xl lg:shadow-md;
   }
 
   .sidenav-close-btn {
@@ -56,7 +56,7 @@
   }
 
   .sidenav-img {
-    @apply flex h-28 w-28 flex-none items-center justify-center overflow-hidden rounded-full bg-slate-300 object-cover shadow-md;
+    @apply flex h-28 w-28 flex-none items-center justify-center overflow-hidden rounded-full bg-neutral-300 object-cover shadow-md;
   }
 
   .sidenav-username {
@@ -66,17 +66,17 @@
   /* Side Nav Menu */
 
   .sidenav-menu {
-    @apply flex h-full w-full flex-col items-center gap-3;
+    @apply flex h-full w-full flex-col items-center gap-3 text-slate-900;
   }
 
   .sidenav-menu .current {
-    @apply bg-gradient-to-r from-neutral-100 to-stone-200 font-bold;
+    @apply bg-gradient-to-r from-white to-neutral-200 font-bold;
   }
 
   /* Side Nav Menu Link */
 
   .sidenav-menu-link {
-    @apply relative flex w-48 items-center gap-5 rounded-xl p-2 px-4 transition-all ease-in-out hover:bg-stone-200 hover:shadow-md;
+    @apply relative flex w-48 items-center gap-5 rounded-xl p-2 px-4 transition-all ease-in-out hover:bg-neutral-200 hover:shadow-md;
   }
 
   /* Side Nav End */
@@ -93,7 +93,7 @@
     @apply p-5;
   }
   .post-card-end {
-    @apply bg-default relative h-full w-full overflow-hidden bg-cover bg-center;
+    @apply relative h-full w-full overflow-hidden bg-default bg-cover bg-center;
   }
   .post-card-img {
     @apply h-full w-full object-cover !object-center transition-all duration-300 ease-in-out;
@@ -107,5 +107,42 @@
   }
   .post-card:hover .post-card-img {
     @apply scale-105;
+  }
+
+  /* TİMELİNE */
+
+  .timeline-section-title {
+    @apply my-5 border-b-2 pb-3 text-xl font-bold;
+  }
+
+  .timeline {
+    @apply relative gap-5;
+  }
+
+  .timeline::before {
+    content: "";
+    @apply absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 rounded-xl bg-slate-700;
+  }
+
+  .timeline-item {
+    @apply relative w-1/2 py-2 pe-5;
+  }
+
+  .timeline-item:nth-child(even) {
+    transform: translateX(100%);
+    @apply pe-0 ps-5;
+  }
+
+  .timeline-item:nth-child(even) .timeline-card::before {
+    @apply left-0 -translate-x-1/2;
+  }
+
+  .timeline-card {
+    @apply w-full rounded-md bg-neutral-100 p-5;
+  }
+
+  .timeline-card::before {
+    content: "";
+    @apply absolute right-0 top-1/2 z-10 h-4 w-4 translate-x-1/2 rounded-full border-4 border-slate-700 bg-white;
   }
 }
